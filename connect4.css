@@ -1,51 +1,36 @@
+form{
+  margin-top: 20px;
+  text-align: center;
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  border-style: solid;
+  background-color: yellow;
+}
 /* game board table */
-
 #board td {
   width: 50px;
   height: 50px;
   border: solid 1px #666;
+  background-color: white;
 }
-
 /* pieces are div within game table cells: draw as colored circles */
-
 .piece {
-  /* TODO: make into circles */
   margin: 5px;
   width: 80%;
   height: 80%;
+  border-radius: 50%;
+}
+.gamecells{
   border-radius: 100%;
 }
-
-/* TODO: make pieces red/blue,  depending on player 1/2 piece */
-.p1{
-  background-color: red;
-}
-.p2{
-  background-color: blue;
-}
 /* column-top is table row of clickable areas for each column */
-
 #column-top td {
   border: dashed 1px lightgray;
+  background-color: white;
 }
-
 #column-top td:hover {
   background-color: gold;
-}
-
-#btnContainer{
-  margin: 15rem;
-  text-align: center;
-  font-family: cursive;
-}
-#restart{
-  width: 10rem;
-  height: 10rem;
-  background-color: yellow;
-  font-size: 30px;
-  font-family: cursive;
-}
-#gameTitle{
-  margin-bottom: 5rem;
-  font-size: 50px;
 }
